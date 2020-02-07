@@ -1,0 +1,12 @@
+<h1>Editing School Class</h1>
+
+<h2>School Class Edit</h2>
+<%= form_for(@school_class) do |f| %>
+<%= f.text_field :title, id: "school_class_title" %>
+<%= f.text_field :room_number, id: "school_class_room_number" %>
+<%= f.submit 'Edit!', id: "Update School class" %>
+<% end %>
+
+
+<%= link_to 'Show', @school_class %> |
+<%= link_to 'Back', school_classes_path %>
