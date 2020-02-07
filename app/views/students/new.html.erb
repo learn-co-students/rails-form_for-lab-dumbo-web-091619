@@ -1,0 +1,6 @@
+<%= content_tag(:h1, "Student Form") %>
+<%= form_for(@student) do |student_form| %>
+  <%= student_form.text_field :first_name %>
+  <%= student_form.text_field :last_name %>
+  <%= student_form.submit "Create Student" %>
+<% end %>
